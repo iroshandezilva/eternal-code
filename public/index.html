@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eternal Code</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<style>
+    #mobile-menu.menu-hidden {
+        display: none;
+    }
+</style>
+<body>
+<div class="">
+
+    <header class="absolute top-0 left-0 w-full z-10">
+        <div class="py-8">
+            <div class="container mx-auto flex justify-between ">
+                <div class="w-52">
+                    <img src="assets/img/Eternal-Code-Logo.svg" alt="">
+                </div>
+                <div class="space-x-6 hidden md:flex">
+                    <a class="font-poppins text-lg font-medium uppercase text-white" href="/">Home</a>
+                    <a class="font-poppins text-lg font-medium uppercase text-white" href="#collection">COLLECTION</a>
+                    <a class="font-poppins text-lg font-medium uppercase text-white" href="#roadmap">ROADMAP</a>
+                </div>
+                <div class="block md:hidden text-white" id="toggle-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="fixed inset-0 flex z-40 menu-hidden" id="mobile-menu" role="dialog" aria-modal="true">
+            <div class="fixed inset-0 bg-black bg-opacity-25" aria-hidden="true"></div>
+            <div class="relative max-w-xs w-full bg-cloud-burst shadow-xl pb-12 flex flex-col overflow-y-auto">
+                <div class="px-4 pt-5 pb-2 flex">
+                    <button type="button"
+                            class="-m-2 p-2 rounded-md inline-flex items-center justify-center text-gray-400"
+                            id="close-menu">
+                        <span class="sr-only">Close menu</span>
+                        <!-- Heroicon name: outline/x -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                             stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="border-t border-gray-200 py-6 px-4 space-y-6">
+                    <div class="flow-root">
+                        <a href="/" class="-m-2 p-2 block font-medium text-white">Home</a>
+                    </div>
+
+                    <div class="flow-root">
+                        <a href="#collection" class="-m-2 p-2 block font-medium text-white">COLLECTION</a>
+                    </div>
+
+                    <div class="flow-root">
+                        <a href="#roadmap" class="-m-2 p-2 block font-medium text-white">ROADMAP</a>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+    <div class="bg-hero-bg  bg-cover h-screen flex items-end md:pb-32 relative">
+    <div class="absolute w-full h-full bg-black bg-opacity-60 top-0 left-0 z-0"></div>
+        <div class="container mx-auto relative z-10">
+            <div class=" flex items-center">
+                <div class="max-w-3xl">
+                    <h2 class="xl:text-2xl md:text-2xl text-lg text-white mb-3 uppercase tracking-widest lg:tracking-widermx ">Welcome to the</h2>
+                    <h1 class="xl:text-8xl md:text-5xl text-4xl font-bold mb-5 text-white"
+                        style="text-shadow: 0px 0px 20px rgba(179, 8, 220, 0.93);">ETERNAL CODE</h1>
+                    <p class="font-roboto leading-7 text-white">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna..</p>
+
+                    <div class="flex space-x-10 mt-8">
+                        <a href="#">
+                            <div class="flex space-x-3 items-center">
+                                <img class="w-12 filter brightness-0 invert" src="assets/img/discord.svg" alt="">
+                                <span class="lg:text-3xl font-robotoMono uppercase text-white">Discord</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="flex space-x-3 items-center">
+                                <img class="w-12  filter brightness-0 invert" src="assets/img/twitter.svg" alt="">
+                                <span class="lg:text-3xl font-robotoMono uppercase text-white">twitter</span>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="flex mb-8 md:mb-0 flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-10 mt-8">
+
+                        <a href="#"
+                           class="inline-block flex py-4 px-12 border border-pink-600 bg-sea-blue drop-shadow-pink text-pink-600 filter drop-shadow-sm">Join
+                            Discord</a>
+
+                        <a href="#"
+                           class="inline-block flex py-4 px-12 border border-pink-600 bg-sea-blue drop-shadow-pink text-pink-600 filter drop-shadow-sm">Minting
+                            Now</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-sea-blue lg:pb-80 pb-60 relative" id="collection">
+        <div class="bg-bg1 bg-cover bg-no-repeat bg-top 2xl:py-80 md:py-48 py-24 filter drop-shadow-pinkDarkBottom"></div>
+
+        <div class="container mx-auto">
+            <h2 class="text-4xl text-white uppercase font-roboto mb-16">Our <span class="font-bold text-pink-600">Collections</span>
+            </h2>
+            <div class="grid lg:grid-cols-4 grid-cols-1 gap-8 relative z-10">
+                <div class="border-2 border-pink-600 rounded-md p-6 bg-grayLight">
+                    <p class="text-white font-semibold text-xl mb-3">TOP 100%</p>
+
+                    <div>
+                        <img src="assets/img/img-1.png" alt="">
+                    </div>
+
+                    <div class="flex justify-between mt-3">
+                        <div class="text-white 2xl:text-xl text-lg font-semibold">Robo Psychedelic 1</div>
+                        <div class="text-white text-xl ">Tier 1</div>
+                    </div>
+                </div>
+
+                <div class="border-2 border-pink-600 rounded-md p-6 bg-grayLight">
+                    <p class="text-white font-semibold text-xl mb-3">TOP 100%</p>
+
+                    <div>
+                        <img src="assets/img/img-1.png" alt="">
+                    </div>
+
+                    <div class="flex justify-between mt-3">
+                        <div class="text-white 2xl:text-xl text-lg font-semibold">Robo Psychedelic 1</div>
+                        <div class="text-white text-xl ">Tier 1</div>
+                    </div>
+                </div>
+
+                <div class="border-2 border-pink-600 rounded-md p-6 bg-grayLight">
+                    <p class="text-white font-semibold text-xl mb-3">TOP 100%</p>
+
+                    <div>
+                        <img src="assets/img/img-1.png" alt="">
+                    </div>
+
+                    <div class="flex justify-between mt-3">
+                        <div class="text-white 2xl:text-xl text-lg font-semibold">Robo Psychedelic 1</div>
+                        <div class="text-white text-xl ">Tier 1</div>
+                    </div>
+                </div>
+
+                <div class="border-2 border-pink-600 rounded-md p-6 bg-grayLight">
+                    <p class="text-white font-semibold text-xl mb-3">TOP 100%</p>
+
+                    <div>
+                        <img src="assets/img/img-1.png" alt="">
+                    </div>
+
+                    <div class="flex justify-between mt-3">
+                        <div class="text-white 2xl:text-xl text-lg font-semibold">Robo Psychedelic 1</div>
+                        <div class="text-white text-xl ">Tier 1</div>
+                    </div>
+                </div>
+
+
+                <div class="border-2 border-pink-600 rounded-md p-6 bg-grayLight">
+                    <p class="text-white font-semibold text-xl mb-3">TOP 100%</p>
+
+                    <div>
+                        <img src="assets/img/img-5.png" alt="">
+                    </div>
+
+                    <div class="flex justify-between mt-3">
+                        <div class="text-white 2xl:text-xl text-lg font-semibold">Robo Psychedelic 1</div>
+                        <div class="text-white text-xl ">Tier 1</div>
+                    </div>
+                </div>
+
+                <div class="border-2 border-pink-600 rounded-md p-6 bg-grayLight">
+                    <p class="text-white font-semibold text-xl mb-3">TOP 100%</p>
+
+                    <div>
+                        <img src="assets/img/img-6.png" alt="">
+                    </div>
+
+                    <div class="flex justify-between mt-3">
+                        <div class="text-white 2xl:text-xl text-lg font-semibold">Robo Psychedelic 1</div>
+                        <div class="text-white text-xl ">Tier 1</div>
+                    </div>
+                </div>
+
+                <div class="border-2 border-pink-600 rounded-md p-6 bg-grayLight">
+                    <p class="text-white font-semibold text-xl mb-3">TOP 100%</p>
+
+                    <div>
+                        <img src="assets/img/img-7.png" alt="">
+                    </div>
+
+                    <div class="flex justify-between mt-3">
+                        <div class="text-white 2xl:text-xl text-lg font-semibold">Robo Psychedelic 1</div>
+                        <div class="text-white text-xl ">Tier 1</div>
+                    </div>
+                </div>
+
+                <div class="border-2 border-pink-600 rounded-md p-6 bg-grayLight">
+                    <p class="text-white font-semibold text-xl mb-3">TOP 100%</p>
+
+                    <div>
+                        <img src="assets/img/img-8.png" alt="">
+                    </div>
+
+                    <div class="flex justify-between mt-3">
+                        <div class="text-white 2xl:text-xl text-lg font-semibold">Robo Psychedelic 1</div>
+                        <div class="text-white text-xl ">Tier 1</div>
+                    </div>
+                </div>
+
+
+                <div class="border-2 border-pink-600 rounded-md p-6 bg-grayLight">
+                    <p class="text-white font-semibold text-xl mb-3">TOP 100%</p>
+
+                    <div>
+                        <img src="assets/img/img-9.png" alt="">
+                    </div>
+
+                    <div class="flex justify-between mt-3">
+                        <div class="text-white 2xl:text-xl text-lg font-semibold">Robo Psychedelic 1</div>
+                        <div class="text-white text-xl ">Tier 1</div>
+                    </div>
+                </div>
+
+                <div class="border-2 border-pink-600 rounded-md p-6 bg-grayLight">
+                    <p class="text-white font-semibold text-xl mb-3">TOP 100%</p>
+
+                    <div>
+                        <img src="assets/img/img-10.png" alt="">
+                    </div>
+
+                    <div class="flex justify-between mt-3">
+                        <div class="text-white 2xl:text-xl text-lg font-semibold">Robo Psychedelic 1</div>
+                        <div class="text-white text-xl ">Tier 1</div>
+                    </div>
+                </div>
+
+                <div class="border-2 border-pink-600 rounded-md p-6 bg-grayLight">
+                    <p class="text-white font-semibold text-xl mb-3">TOP 100%</p>
+
+                    <div>
+                        <img src="assets/img/img-11.png" alt="">
+                    </div>
+
+                    <div class="flex justify-between mt-3">
+                        <div class="text-white 2xl:text-xl text-lg font-semibold">Robo Psychedelic 1</div>
+                        <div class="text-white text-xl ">Tier 1</div>
+                    </div>
+                </div>
+
+                <div class="border-2 border-pink-600 rounded-md p-6 bg-grayLight">
+                    <p class="text-white font-semibold text-xl mb-3">TOP 100%</p>
+
+                    <div>
+                        <img src="assets/img/img-12.png" alt="">
+                    </div>
+
+                    <div class="flex justify-between mt-3">
+                        <div class="text-white 2xl:text-xl text-lg font-semibold">Robo Psychedelic 1</div>
+                        <div class="text-white text-xl ">Tier 1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-0 z-0 w-full left-0 bg-bg2 bg-cover bg-no-repeat bg-top 2xl:py-80 md:py-48 py-24 filter drop-shadow-pinkDarkTop"></div>
+    </div>
+
+
+    <div class="bg-sea-blue py-24">
+        <h2 class="text-center text-4xl font-bold text-white">Join Our Community</h2>
+        <div class="flex space-x-10 mt-8 justify-center">
+            <a href="#">
+                <div class="flex space-x-3 items-center">
+                    <img class="w-10 filter brightness-0 invert" src="assets/img/discord.svg" alt="">
+                    <span class="text-xl font-roboto uppercase text-white">Discord</span>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="flex space-x-3 items-center">
+                    <img class="w-10 filter brightness-0 invert" src="assets/img/twitter.svg" alt="">
+                    <span class="text-xl font-roboto uppercase text-white">twitter</span>
+                </div>
+
+            </a>
+        </div>
+    </div>
+
+    <div class="bg-bg3 bg-cover from-black via-sea-blue to-black py-24" id="roadmap">
+        <div class="container mx-auto">
+            <h2 class="text-4xl text-center text-white uppercase font-roboto font-semibold mb-16">Roadmap</h2>
+            <div class="grid lg:grid-cols-4 grid-cols-4 md:gap-10 grid-rows-8 lg:grid-rows-3 relative">
+                <div class="md:h-4 md:w-full hidden lg:block w-4 h-full bg-white ml-3 absolute left-0" style="  top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+                <div class="lg:hidden block w-4 h-full bg-white ml-3 absolute left-1 top-3" ></div>
+
+                <div class="relative col-start-2 row-start-2 col-span-3 lg:col-auto lg:row-auto">
+                    <p class="font-roboto leading-8 font-medium text-white">
+                        1 - Lorem ipsum dolor sit amet,<br>
+                        - nonumy eirmod tempor invidunt ut<br>
+                        - erat, sed diam voluptua. At vero eos </p>
+                </div>
+
+                <div class="flex items-end col-start-2 row-start-3 col-span-3  lg:col-auto lg:row-auto">
+                    <h4 class="text-white font-bold text-3xl ">Quarter 2</h4>
+                </div>
+
+                <div class="relative col-start-2 row-start-6 col-span-3  lg:col-auto lg:row-auto">
+                    <p class="font-roboto leading-8 font-medium text-white">
+                        3- Lorem ipsum dolor sit amet,<br>
+                        - nonumy eirmod tempor invidunt ut<br>
+                        - erat, sed diam voluptua. At vero eos </p>
+                </div>
+
+                <div class="flex items-end col-start-2 row-start-7 col-span-3  lg:col-auto lg:row-auto">
+                    <h4 class="text-white font-bold text-3xl">Quarter 4</h4>
+                </div>
+
+                <div class="relative flex items-center col-start-1 row-start-1  lg:col-auto lg:row-auto">
+                    <div class="relative flex-1">
+                        <div class="w-12 h-12  bg-transparent ring-4 ring-white ring-offset-4 ring-offset-transparent filter drop-shadow-pink  relative flex items-center justify-center rounded-full z-10">
+                            <div class="w-8 h-8 filter drop-shadow-pink  bg-pink-600  rounded-full  z-0"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="relative flex items-center  col-start-1 row-start-3  lg:col-auto lg:row-auto">
+                    <div class="">
+                        <div class="w-12 h-12  bg-transparent ring-4 ring-white ring-offset-4 ring-offset-transparent filter drop-shadow-pink  relative flex items-center justify-center rounded-full z-10">
+                            <div class="w-8 h-8 filter drop-shadow-pink  bg-pink-600  rounded-full  z-0"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center  col-start-1 row-start-5  lg:col-auto lg:row-auto">
+                    <div class="">
+                        <div class="w-12 h-12  bg-transparent ring-4 ring-white ring-offset-4 ring-offset-transparent filter drop-shadow-pink  relative flex items-center justify-center rounded-full z-10">
+                            <div class="w-8 h-8 filter drop-shadow-pink  bg-pink-600  rounded-full  z-0"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative flex items-center  col-start-  row-start-7  lg:col-auto lg:row-auto">
+                    <div class="">
+                        <div class="w-12 h-12  bg-transparent ring-4 ring-white ring-offset-4 ring-offset-transparent filter drop-shadow-pink  relative flex items-center justify-center rounded-full z-10">
+                            <div class="w-8 h-8 filter drop-shadow-pink  bg-pink-600  rounded-full  z-0"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex items-start col-start-2 row-start-1 col-span-3  lg:col-auto lg:row-auto">
+                    <h4 class="text-white font-bold text-3xl">Quarter 1</h4>
+                </div>
+
+                <div class="relative col-start-2 row-start-4 col-span-3  lg:col-auto lg:row-auto">
+                    <p class="font-roboto leading-8 font-medium text-white ">
+                       2 - Lorem ipsum dolor sit amet,<br>
+                        - nonumy eirmod tempor invidunt ut<br>
+                        - erat, sed diam voluptua. At vero eos </p>
+                </div>
+
+                <div class="flex items-start  col-start-2 row-start-5 col-span-3  lg:col-auto lg:row-auto">
+                    <h4 class="text-white font-bold text-3xl">Quarter 3</h4>
+                </div>
+
+                <div class="relative col-start-2 row-start-8 col-span-3  lg:col-auto lg:row-auto">
+                    <p class="font-roboto leading-8 font-medium text-white">
+                       4 - Lorem ipsum dolor sit amet,<br>
+                        - nonumy eirmod tempor invidunt ut<br>
+                        - erat, sed diam voluptua. At vero eos </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer class="bg-sea-blue border-t border-gray-600 py-4 ">
+    <div class="container flex flex-col md:flex-row justify-between items-center mx-auto">
+        <div class="w-32">
+            <img src="assets/img/Eternal-Code-Logo.svg" alt="" style="filter: brightness(0) invert(1);">
+        </div>
+        <p class="font-roboto text-white text-center">2021 — Dirty Dogs, All Rights Reserved</p>
+    </div>
+</footer>
+<script>
+
+    let btn = document.getElementById('toggle-btn');
+    let btn_cls = document.getElementById('close-menu');
+
+    btn.addEventListener('click', function () {
+        toggle_menu();
+    });
+    btn_cls.addEventListener('click', function () {
+        toggle_menu();
+    });
+
+    function toggle_menu() {
+        let menu = document.getElementById('mobile-menu');
+        if (menu.classList.contains('menu-hidden')) {
+            menu.classList.remove('menu-hidden');
+        } else {
+            menu.classList.add('menu-hidden');
+        }
+    }
+</script>
+</body>
+</html>
